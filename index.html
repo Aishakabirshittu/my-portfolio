@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aisha Kabir Shittu | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <style>
+    @layer utilities {
+        .nav-item::after {
+            content: '';
+            width: 0%;
+            height: 2px;
+            background-color: #c8a2c8;
+            display: block;
+            margin: auto;
+            transition: width 0.5s ease-in-out;
+        }
+        .nav-item:hover::after {
+            width: 80%;
+        }
+    }
+</style>
+</head>
+<body class="animated-background text-gray-800">
+
+  <!-- Navigation Section -->
+  <nav class="bg-white shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-3xl font-bold accent-lilac">Aisha Kabir Shittu</h1>
+      <ul class="flex space-x-6">
+        <li class="nav-item relative text-gray-700 hover:text-lilac-500">
+          <a href="#about" class="p-2">About</a>
+      </li>
+      <li class="nav-item relative text-gray-700 hover:text-lilac-500">
+          <a href="#projects" class="p-2">Projects</a>
+      </li>
+      <li class="nav-item relative text-gray-700 hover:text-lilac-500">
+          <a href="#contact" class="p-2">Contact</a>
+      </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- About Me Section -->
+  <section id="about" class="py-16">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <img src="./assests/IMG_0307.PNG" alt="profile picture" class="mx-auto rounded-full w-28 h-28 mb-4">
+      <h2 class="text-4xl font-semibold accent-lilac">About Me</h2>
+      <p class="mt-4 text-lg">I am a passionate web developer currently enrolled in a web development bootcamp. I specialize in front-end development with a focus on responsive and user-friendly designs.</p>
+    </div>
+  </section>
+  
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h2 class="text-4xl font-semibold accent-lilac">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+        <!--Recipe Page CSS Styling -->
+        <div class="bg-white p-4 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+          <h3 class="text-2xl font-semibold accent-lilac">Recipe Page CSS Styling</h3>
+          <p class="mt-2">A recipe page that showcases responsive design, clean layout, and custom styling for images, lists, and videos.</p>
+          <a href="https://codepen.io/Aiesharh/details/WNVbKON" class="mt-4 inline-block text-purple-500 hover:underline">View Project</a>
+        </div>
+        <!-- Restaurant Reservation Form Project -->
+        <div class="bg-white p-4 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+          <h3 class="text-2xl font-semibold accent-lilac">Restaurant Reservation Form</h3>
+          <p class="mt-2">An interactive form allowing users to reserve seats at a restaurant.</p>
+          <a href="https://codepen.io/Aiesharh/details/wvVWvBJ" class="mt-4 inline-block text-purple-500 hover:underline">View Project</a>
+        </div>
+        <!-- Flexbox Gallery Project -->
+      <div class="bg-white p-4 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+        <h3 class="text-2xl font-semibold accent-lilac">Travel Bucket List - Flexbox Gallery</h3>
+        <p class="mt-2">A gallery of travel destinations using a responsive flexbox layout with hover effects.</p>
+        <a href="https://codepen.io/Aiesharh/details/jOgraVY" class="mt-4 inline-block text-purple-500 hover:underline">View Project</a>
+      </div>
+      <!-- Grid Gallery Project -->
+      <div class="bg-white p-4 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+        <h3 class="text-2xl font-semibold accent-lilac">My Boutique Catalogue - Grid Gallery</h3>
+        <p class="mt-2">A fashion boutique gallery using a grid layout with responsive design and hover animations.</p>
+        <a href="https://codepen.io/Aiesharh/details/dyxXJyO" class="mt-4 inline-block text-purple-500 hover:underline">View Project</a>
+      </div>
+      <!-- Wanderlust Adventure Project -->
+      <div class="bg-white p-4 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+        <h3 class="text-2xl font-semibold accent-lilac">Wanderlust Adventure</h3>
+        <p class="mt-2">A mock travel agency website styled using Tailwindcss with slideshows and hover animations.</p>
+        <a href="https://github.com/Aishakabirshittu/wanderlust-tailwind" class="mt-4 inline-block text-purple-500 hover:underline">View Project</a>
+      </div>
+      <!-- Portfolio Project -->
+      <div class="bg-white p-4 rounded-lg shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+        <h3 class="text-2xl font-semibold accent-lilac">Portfolio Website</h3>
+        <p class="mt-2">A personal portfolio showcasing my web development projects, with interactive design and an animated background.</p>
+        <a href="https://github.com/Aishakabirshittu/my-portfolio" class="mt-4 inline-block text-purple-500 hover:underline">View Project</a>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h2 class="text-4xl font-semibold accent-lilac">Contact Me</h2>
+      <p class="mt-4">You can reach out to me through my social profiles below.</p>
+      <div class="flex justify-center mt-8 space-x-6">
+        <a href="https://x.com/Aiesharh_k" class="text-gray-600 hover:text-purple-600"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="https://linkedin.com/in/yourusername" class="text-gray-600 hover:text-purple-600"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="https://github.com/Aishakabirshittu" class="text-gray-600 hover:text-purple-600"><i class="fab fa-github fa-2x"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 bg-gray-800 text-white text-center">
+    <p>© 2024 Your Aisha Kabir Shittu | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
